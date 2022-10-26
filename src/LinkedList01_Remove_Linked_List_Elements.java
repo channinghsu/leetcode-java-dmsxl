@@ -7,8 +7,8 @@ public class LinkedList01_Remove_Linked_List_Elements {
         if (head == null) {
             return null;
         }
-        ListNode dummy = new ListNode(-1,head);// 虚拟头结点
-        ListNode pre = dummy;// 当前循环前面的节点
+        ListNode dummyHead = new ListNode(-1,head);// 虚拟头结点 等价于 dummy.next = head;
+        ListNode pre = dummyHead;// 当前循环前面的节点
         ListNode cur = head;//当前循环节点
 
         while(cur != null){
@@ -19,6 +19,6 @@ public class LinkedList01_Remove_Linked_List_Elements {
             }
             cur = cur.next; // 向前移动当前节点
         }
-        return dummy.next;
+        return dummyHead.next;
     }
 }
