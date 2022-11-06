@@ -21,5 +21,4 @@ public class HashTable05_Two_Sum {
         }
         return res;
     }
-
 }
