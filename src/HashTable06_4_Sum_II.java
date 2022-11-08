@@ -33,7 +33,7 @@ public class HashTable06_4_Sum_II {
             }
         }
         //统计剩余的两个元素的和，在map中找是否存在相加为0的情况，同时记录次数
-        // 再遍历剩下两个数组，找到如果 0-temp 在map中出现过的话，就把map中key对应的value，也就是出现次数统计出来。
+        //再遍历剩下两个数组，找到如果 0-temp 在map中出现过的话，就把map中key对应的value，也就是出现次数统计出来。
         for (int i : nums3) {
             for (int j : nums4) {
                 temp = i + j;
