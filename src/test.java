@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class test {
     public static void main(String[] args) {
 //        LinkedList02_Design_Linked_List design = new LinkedList02_Design_Linked_List();
@@ -9,7 +7,7 @@ public class test {
 //        LinkedList05_Remove_Nth_Node_From_End_of_List remove = new LinkedList05_Remove_Nth_Node_From_End_of_List();
 //        System.out.println(remove.removeNthFromEnd(design.dummyHead,2));
 
-        HashTable03_Intersection_of_Two_Arrays inter = new HashTable03_Intersection_of_Two_Arrays();
+        HashTable02_Intersection_of_Two_Arrays inter = new HashTable02_Intersection_of_Two_Arrays();
         int[] a = {1,2,3,4,2};
         int[] b = {2,1};
 
