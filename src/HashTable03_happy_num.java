@@ -9,7 +9,7 @@ import java.util.Set;
 然后重复这个过程直到这个数变为 1，也可能是 无限循环 但始终变不到 1。
 如果这个过程 结果为 1，那么这个数就是快乐数。
  */
-public class HashTable04_happy_num {
+public class HashTable03_happy_num {
     // 计算n每个位上的平方和
     private int sum(int n) {
         int res = 0;
