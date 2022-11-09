@@ -6,7 +6,7 @@ import java.util.List;
 你返回所有和为 0 且不重复的三元组。
 注意：答案中不可以包含重复的三元组。
  */
-public class HashTable08_3_Sum {
+public class HashTable07_3_Sum {
     public List<List<Integer>> threeSum(int[] nums) {
         return null;
     }
