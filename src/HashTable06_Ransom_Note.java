@@ -11,7 +11,7 @@ magazine 中的每个字符只能在 ransomNote 中使用一次。
 /*
 思路：
  */
-public class HashTable07_Ransom_Note {
+public class HashTable06_Ransom_Note {
     public boolean canConstruct(String ransomNote, String magazine) {
         // record数组存放26个小写字母
         int[] record = new int[26];
