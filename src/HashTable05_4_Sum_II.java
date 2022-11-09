@@ -16,7 +16,7 @@
 import java.util.HashMap;
 import java.util.Map;
 
-public class HashTable06_4_Sum_II {
+public class HashTable05_4_Sum_II {
     public int fourSumCount(int[] nums1, int[] nums2, int[] nums3, int[] nums4) {
         Map<Integer, Integer> map = new HashMap<>();//key:a+b的数值，value:a+b数值出现的次数
         int temp;
