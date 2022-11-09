@@ -3,26 +3,28 @@ import java.util.Set;
 
 /*
 349. 两个数组的交集
-给定两个数组 nums1 和 nums2 ，返回 它们的交集 。输出结果中的每个元素一定是 唯一 的。我们可以 不考虑输出结果的顺序 。
+    给定两个数组 nums1 和 nums2 ，返回 它们的交集 。
+    输出结果中的每个元素一定是 唯一 的。我们可以 不考虑输出结果的顺序 。
  */
 public class HashTable02_Intersection_of_Two_Arrays {
     public int[] intersection(int[] nums1, int[] nums2) {
-        if (nums1 == null || nums1.length == 0 || nums2 == null || nums2.length == 0) {
-            return new int[0];
-        }
-        Set<Integer> set1 = new HashSet<>();
-        Set<Integer> resSet = new HashSet<>();
-        //遍历数组1
+        Set<Integer> result = new HashSet<>();// 存放结果，之所以用set是为了给结果集去重
+        /*
+        直接使用set 不仅占用空间比数组大，而且速度要比数组慢，set把数值映射到key上都要做hash计算的。所以把set换为数组
+        Set<Integer> result1 = new HashSet<>();
+        for (int i : nums1) {result1.add(i);}
+        */
+        int[] nums = new int[1001];
         for (int i : nums1) {
-            set1.add(i);
+            nums[i]++;
         }
-        //遍历数组2的过程中判断哈希表中是否存在该元素
+        // 若nums2中包含nums1中的数，则添加到result中
         for (int i : nums2) {
-            if (set1.contains(i)) {
-                resSet.add(i);
+            if (nums[i] >= 1) {
+                result.add(i);
             }
         }
-        //将结果几何转为数组
-        return resSet.stream().mapToInt(x -> x).toArray();
+        // HashSet To Int Array
+        return result.stream().mapToInt(x -> x).toArray();
     }
 }
