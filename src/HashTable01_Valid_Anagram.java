@@ -4,7 +4,7 @@
 注意：若 s 和 t 中每个字符出现的次数都相同，则称 s 和 t 互为字母异位词。
 示例 1: 输入: s = "anagram", t = "nagaram" 输出: true
 示例 2: 输入: s = "rat", t = "car" 输出: false
-说明: 你可以假设字符串只包含小写字母。
+说明: 你可以假设字符串只包含小写字母
  */
 public class HashTable01_Valid_Anagram {
     public boolean isAnagram(String s, String t) {
