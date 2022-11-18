@@ -10,6 +10,9 @@ public class test {
         HashTable02_Intersection_of_Two_Arrays inter = new HashTable02_Intersection_of_Two_Arrays();
         int[] a = {1,2,3,4,2};
         int[] b = {2,1};
+        String03_2_replace_space str = new String03_2_replace_space();
+        str.replaceSpace("My name is channing.");
+
 
         inter.intersection(a,b);
     }
