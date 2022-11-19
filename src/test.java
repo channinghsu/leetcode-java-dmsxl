@@ -11,9 +11,7 @@ public class test {
         int[] a = {1,2,3,4,2};
         int[] b = {2,1};
         String03_2_replace_space str = new String03_2_replace_space();
-        str.replaceSpace("My name is channing.");
 
-
-        inter.intersection(a,b);
+        System.out.println(str.replaceSpace("My name is c"));
     }
 }
