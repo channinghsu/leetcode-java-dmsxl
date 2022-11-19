@@ -10,11 +10,11 @@ public class String03_2_replace_space {
         //扩充空间，空格数量2倍
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) == ' ') {
-                sb.append("   ");
+                sb.append("  ");
             }
         }
         //左指针：指向原始字符串最后一个位置
-        int i = s.length()-1;
+        int i = s.length() - 1;
         s += sb.toString();
         char[] ch = s.toCharArray();
         //右指针：指向扩展字符串的最后一个位置
